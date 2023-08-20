@@ -27,14 +27,14 @@ body{
 }     
   
 body { 
-            background-image: url('trophy1.png');
+            background-image: url('trophy3.jpg');    
             background-size: cover; /* Adjust the background size as needed */
             background-repeat: no-repeat;
             background-attachment: fixed; /* This keeps the background fixed when scrolling */
             /* Add any other CSS properties you need for the body */
         }
 .container{ 
-    margin-top: 50%;
+    margin-top: 50%; 
     flex-wrap: wrap; 
     display: inline-flex;
     justify-content: center;
@@ -47,7 +47,7 @@ body {
 .container .card{
     
     position: relative;
-    width: 280px;
+    width: 300px; 
     height: 450px;
     margin: 30px;
     top: -200px;
@@ -154,13 +154,6 @@ z-index: 1;
         margin: 30px;
         padding: 20px;
     }
-
-@media (max-width: 768px) {
-        .card {
-            flex: 0 0 calc(50% - 30px);
-        }
-    }
-
     .container {
         display: flex;
         flex-wrap: wrap;
@@ -240,10 +233,95 @@ z-index: 1;
     100%{transform: translateX(0%);}
 }
 
+/* Keep your existing styles */
 
+/* Add styles for the image section */
+#image-section {
+    padding: 50px 0;
+}
+ 
+.image-container {
+    backdrop-filter: blur(5px); 
+    max-width: 90%; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center the image horizontally */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+
+/* Keep your existing styles */
+
+/* Add styles for the event section */
+.event-container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.event-header h2 {
+    justify-content: space-around; 
+    font-size: 2.5em;
+    margin-bottom: 15px; 
+    color: #353353;  
+}
+
+.event-header p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.event-info {
+    flex: 1;
+    text-align: center;
+}
+
+.event-info h3 {
+    font-size: 1.5em;
+    color: #e82a2a;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-size: 1.2em;
+    color: #161616;
+}
+
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+    .event-container {
+        padding: 10px;
+    }
+}
+ 
+ 
 </style>
 
-    <body>
+    <body> 
+
+        <audio autoplay loop> 
+            <source src="Ghostrifter-Official-Devyzed-Downtown-Glow.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>        
         <!-- ===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid"> 
@@ -254,13 +332,12 @@ z-index: 1;
                 </div>
 
                 <div class="nav__menu" id="nav-menu" >
-                    <ul class="nav__list" style="font-size: 1.2em;"> 
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                       
-                        <li class="nav__item"><a href="#section3" class="nav__link">Images</a></li> 
-                        <li class="nav__item"><a href="#section" class="nav__link">Explore</a></li> 
+                    <ul class="nav__list" style="font-size: 1.2em;">  
+                        <li class="nav__item"><a href="#section" class="nav__link">Start</a></li>
+                        <li class="nav__item"><a href="#image-section" class="nav__link">Katha Sagar</a></li>
+                        <li class="nav__item"><a href="#event-section" class="nav__link">Drill</a></li> 
                         <li class="nav__item"><a href="#section2" class="nav__link">Credits</a></li> 
-                    </ul> 
+                    </ul>  
                 </div>  
             </nav>
         </header>
@@ -271,47 +348,30 @@ z-index: 1;
                 <div class="parallax home__parallax home__parallax-img1" data-rellax-speed="-9"></div>
                 <div class="parallax home__parallax home__parallax-img2" data-rellax-speed="-7"></div>
                 <div class="parallax home__parallax home__parallax-img3" data-rellax-speed="-6"></div> 
-                <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>
+                <div class="parallax home__parallax home__parallax-img4" data-rellax-speed="-3"></div>  
 
-                <h1 class="parallax home__title" data-rellax-speed="-6">SOAP BOX</h1>
+                <h1 class="parallax home__title" data-rellax-speed="-6" style="font-size: 5em;">Inter House Competition</h1>
                 <span class="parallax home__subtitle" data-rellax-speed="-5">Soliate Your Gracious Presence</span> 
 
                 <div class="home__scroll">
                    <a href="#section"><i class='bx bx-mouse'></i></a>
                 </div>
-            </div> 
+            </div> <br><br> <br><br><br> 
 
-            <section id="section3" style="margin-top: 5%;">
-                <div class="container1">
-                 <div class="wrapper">
-                    <div class="wrapper-holder">
-                        <div id="slider-img-1"></div>
-                        
-                        <div id="slider-img-2"></div>
-                        
-                        <div id="slider-img-3"></div>
-                        
-                        <div id="slider-img-4"></div>
-                    </div>
-                 </div>
-                 <div class="button-holder">
-                    <a href="#slider-img-1" class="button"></a>
-                    <a href="#slider-img-2" class="button"></a>
-                    <a href="#slider-img-3" class="button"></a>
-                    <a href="#slider-img-4" class="button"></a>
-                 </div>
-                
-            </section><br><br>   
+          
             <!-- ===== SECTION =====-->
             <section class="l-section" id="section">
-                <div class="section">
-                    <div class="section__data">
+                <div class="section"> 
+                    <div class="section__data">  
+                        <h2 class="home__title" style="top: 100px;  font-size: 3em;" class="col-xs-12">Soap Box</h2>  <br><br> <br><br><br>        
                     <div class="container">
-                        <div class="card">
-                            <div class="box">
-                                <div class="content">
+                          
+                        <div class="card" class="col-xs-12">
+                            <div class="box" class="col-xs-12">
+                                <div class="content" class="col-xs-12">
+                                    <a href="images/day1.html">   
                                     <img src="lol.png" >    
-                                    <h2>01</h2> <br> 
+                                    <h2>01</h2> <br>  
                                     <h3>FUNNY BONES</h3> 
                                     <H4>STAND-UP COMEDY</H4> 
                                     <br>
@@ -319,27 +379,84 @@ z-index: 1;
                                     <p>DATE- 21 AUG 2023</p><br>
                                     <p>TIME- 8 a.m</p><br>
                                     <p>VENUE- AUDITORIUM</p>  
+                                    </a> 
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="box">
-                                <div class="content"> 
+                        <div class="card" class="col-xs-12">
+                            <div class="box" class="col-xs-12">
+                                <div class="content" class="col-xs-12"> 
                                     <img src="debate.png">  
                                     <h2>02</h2>
                                     <h3>Coming Soon !</h3><br><br><br><br><br><br><br><br><br><br>   
                                 </div>
-                            </div>
+                            </div> 
                         </div>
-                        <div class="card">
-                            <div class="box">
-                                <div class="content"> 
+                        <div class="card" class="col-xs-12">
+                            <div class="box" class="col-xs-12">
+                                <div class="content" class="col-xs-12"> 
                                     <img src="tv-program.png">    
                                     <h2>03</h2>
                                     <h3>Coming Soon !</h3><br><br><br><br><br><br><br><br><br><br>     
                                 </div>
                             </div>
                         </div>
+                        </div> 
+                    </section> 
+
+                    <section class="l-section" id="image-section">
+                        <div class="image-container" class="col-xs-12">
+                            <img src="Invitation1024_1.jpg" alt="Image Description">
+                        </div> 
+                    </section><br><br><br>   
+
+                    <section id="section3" style="margin-top: 5%;">
+                        <div class="container1">
+                         <div class="wrapper">
+                            <div class="wrapper-holder" class="col-xs-12"> 
+                                <div id="slider-img-1"></div>
+                                
+                                <div id="slider-img-2"></div>
+                                
+                                <div id="slider-img-3"></div>
+                                
+                                <div id="slider-img-4"></div>
+                            </div>
+                         </div>
+                         <div class="button-holder" class="col-xs-12">
+                            <a href="#slider-img-1" class="button"></a>
+                            <a href="#slider-img-2" class="button"></a>
+                            <a href="#slider-img-3" class="button"></a>
+                            <a href="#slider-img-4" class="button"></a> 
+                        </div> 
+                         </div>
+                        
+                    </section><br><br>  
+
+                    <section class="l-section" id="event-section">
+                        <div class="event-container" >
+                            <div class="event-header">
+                                <h2>Join Us for an Exciting Day of Athletics and Teamwork!</h2>
+                                <p>It's time to wear your judge's hats for the day and join us for an exciting day of athleticism and teamwork as we celebrate National Sports Day with our Interhouse Drill and Athletics Competition! The event promises to be a spectacle of talent and sportsmanship, showcasing the prowess of our students in various disciplines.</p>
+                            </div>
+                            <div class="event-details">
+                                <div class="event-info">
+                                    <h3>Date:</h3>
+                                    <p>August 29, 2023</p>
+                                </div>
+                                <div class="event-info">
+                                    <h3>Time:</h3>
+                                    <p>8:00 AM</p>
+                                </div>
+                                <div class="event-info">
+                                    <h3>Venue:</h3>
+                                    <p>Main Ground</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                     
+
                     <script type="text/javascript" src="vanilla-tilt.js"></script>
                     <script>
                         VanillaTilt.init(document.querySelectorAll(".card"),{
@@ -362,15 +479,15 @@ z-index: 1;
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!-- MAIN JS -->
-        <script src="assets/js/main.js"></script><br><br><br><br> 
+        <script src="assets/js/main.js"></script><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
         <section class="l-section" id="section2">
         <footer style="background: #353353;padding: 15px;"> 
 	
             <h1 style="text-align: center; color: whitesmoke; font-size: 3em; ">Created and Designed By :</h1>
-            <div class="heading-container">
-                <h2 style="color: #2ab5e8; font-size: 3em; "> Mr. Divyansh Patel</h2> 
-                <h2 style="color: white; font-size: 2em; ">and</h2>  
-                <h2 style="color: #e8e22a; font-size: 3em; ">Mr. Kartvvya Parmar</h2>
+            <div class="heading-container"> 
+                <h2 style="color: #ebe41a; font-size: 3em; ">Divyansh Patel</h2> 
+                <h2 style="color: white; font-size: 2em; ">and</h2>   
+                <h2 style="color: #e8e22a; font-size: 3em; ">Kartvvya Parmar</h2>
             </div> 
             <h1 style="text-align: center; color: whitesmoke; font-size: 2em;">VIII A</h1>  
             <hr style="height: 2px; background-color: white; width: 100%;">	<br>  

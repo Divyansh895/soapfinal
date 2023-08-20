@@ -97,8 +97,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-weight: bold;
+
+  backdrop-filter: blur(10px); /* Add backdrop filter for blurring */ 
+
   
 }
+
+
 
 @media screen and (max-width: 768px) {
   .nav__menu {
@@ -159,26 +164,6 @@ img {
   background-size: cover;
   background-position: center;
   
-}
-
-.home__parallax-img1 {
-  background-image: url("/assets/img/imgm1.png");
-  z-index: var(--z-normal);
-}
-
-.home__parallax-img2 {
-  background-image: url("/assets/img/imgm2.png");
-  z-index: var(--z-tooltip);
-}
-
-.home__parallax-img3 {
-  background-image: url("/assets/img/imgm3.png");
-  z-index: var(--z-fixed);
-}
-
-.home__parallax-img4 {
-  background-image: url("/assets/img/imgm4.png");
-  z-index: var(--z-fixed);
 }
 
 .home__title, .home__subtitle {
